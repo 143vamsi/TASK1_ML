@@ -1,0 +1,62 @@
+Name: Bandala kunta Vamsi Krishna
+id:
+Domain: Machine Learning
+Duration
+Mentor:Sravani Gouni
+
+Description:
+### Linear Regression: An Overview
+
+**Linear regression** is a statistical method and machine learning algorithm used to model and predict a relationship between a dependent variable (often called the target or outcome) and one or more independent variables (often called features or predictors). It is one of the simplest and most widely used algorithms for predictive analysis.
+
+#### Key Concepts
+
+1. **Dependent Variable (Y)**: The variable we are trying to predict or explain.
+2. **Independent Variables (X)**: The variables used to predict the dependent variable.
+3. **Linearity**: The assumption that the relationship between the dependent and independent variables is linear.
+
+#### Types of Linear Regression
+
+1. **Simple Linear Regression**: Models the relationship between two variables by fitting a linear equation to the observed data.
+   \[
+   Y = \beta_0 + \beta_1 X + \epsilon
+   \]
+   - \( Y \): Dependent variable
+   - \( X \): Independent variable
+   - \( \beta_0 \): Intercept (the value of \( Y \) when \( X \) is 0)
+   - \( \beta_1 \): Slope (the change in \( Y \) for a one-unit change in \( X \))
+   - \( \epsilon \): Error term
+
+2. **Multiple Linear Regression**: Models the relationship between one dependent variable and two or more independent variables.
+   \[
+   Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n + \epsilon
+   \]
+   - \( X_1, X_2, \ldots, X_n \): Independent variables
+   - \( \beta_0, \beta_1, \beta_2, \ldots, \beta_n \): Coefficients
+
+#### Assumptions
+
+Linear regression makes several key assumptions:
+1. **Linearity**: The relationship between the independent and dependent variables is linear.
+2. **Independence**: Observations are independent of each other.
+3. **Homoscedasticity**: The residuals (errors) have constant variance at every level of \( X \).
+4. **Normality**: The residuals are normally distributed.
+5. **No Multicollinearity**: Independent variables are not highly correlated with each other.
+
+#### Model Evaluation
+
+1. **Mean Squared Error (MSE)**: Measures the average of the squares of the errors—the difference between observed and predicted values.
+   \[
+   MSE = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2
+   \]
+
+2. **R-squared (R²)**: Represents the proportion of variance in the dependent variable that is predictable from the independent variables. It ranges from 0 to 1, with higher values indicating a better fit.
+   \[
+   R^2 = 1 - \frac{SS_{residual}}{SS_{total}}
+   \]
+   - \( SS_{residual} \): Sum of squares of residuals
+   - \( SS_{total} \): Total sum of squares
+
+3. **Adjusted R-squared**: Adjusted for the number of predictors in the model. It penalizes the addition of unnecessary predictors.
+Conclusion:
+Linear regression is a foundational tool in machine learning and statistics, offering a simple yet powerful way to model relationships between variables. Its assumptions and limitations should be considered carefully, and while it is not suitable for all types of data, it provides a clear and interpretable model for many practical applications.
